@@ -1132,3 +1132,4 @@ export default function App() {
     </TranslationContext.Provider>
   );
 }
+export default App;
