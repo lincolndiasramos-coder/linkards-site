@@ -273,7 +273,6 @@ const SynapseHeader = () => (
 // --- App Component ---
 
 export default function App() {
-  return <div>APP BOOTED</div>;
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [players, setPlayers] = useState([]);
@@ -295,7 +294,13 @@ export default function App() {
   const [tempDeckName, setTempDeckName] = useState("");
   const [isMagicLoading, setIsMagicLoading] = useState(false);
   const [audioLoading, setAudioLoading] = useState(false);
-  
+  if (true) {
+  return (
+    <div style={{ padding: 40, fontSize: 24 }}>
+      APP BOOTED
+    </div>
+  );
+  }
   // Account Mgmt State
   const [showAddPlayerModal, setShowAddPlayerModal] = useState(false);
   const [newPlayerName, setNewPlayerName] = useState("");
