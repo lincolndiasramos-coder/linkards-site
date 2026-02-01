@@ -273,6 +273,11 @@ const SynapseHeader = () => (
 // --- App Component ---
 
 export default function App() {
+  return (
+  <div style={{ padding: 40, fontSize: 24 }}>
+    APP BOOTED
+  </div>
+);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [players, setPlayers] = useState([]);
